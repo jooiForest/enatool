@@ -1,0 +1,43 @@
+/*初始设置*/
+html,body{ width: 100%; height: 100%}
+a, button {cursor: pointer;}
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "Microsoft YaHei";
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.u-input, .u-label, .u-checkbox, .u-select, .u-textarea {height: 28px; border-width: 1px; padding-top: 0; padding-bottom: 0; padding-left: 3px; padding-right: 3px; font-size: 14px; display: block; float: left; padding: 0; border-radius: 3px; border-style: solid; outline: none; text-indent: 5px; line-height: 28px; border-color: #e0e0e0; color: #808080; background-color: #ffffff; }
+/*公共类*/
+.f-hidden{display: none;}
+.u-input{
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing: border-box;
+	*behavior: url(/css/boxsizing.htc);
+	width:100%;
+}
+
+
+/*布局类*/
+.g-layouted{position: relative;}
+.g-layout{position: relative;width:100%;height:100%;}
+.g-layouted .layouted-top,.layouted-left,.layout-left,.layouted-center,.layout-center,.layout-top{position: absolute;clear: both;display: block;float:left;left:0px;right:0px;}
+.g-layouted .layouted-right,.layout-right{position: absolute;right:0px;clear: both;float:right;display: block;}
+.g-layouted .layouted-bottom,.layout-bottom{position: absolute;bottom:0px;clear: both;float:left;display: block;}
+.g-layouted .layout-top,.layout-bottom,.layout-center{width:100%;}
+.g-layout .layout-left,.layout-center,.layout-top{position: absolute;clear: both;display: block;float:left;left:0px;right:0px;}
+.g-layout .layout-right{position: absolute;right:0px;clear: both;float:right;display: block;}
+.g-layout .layout-bottom{position: absolute;bottom:0px;clear: both;float:left;display: block;}
+.g-layout .layout-top,.layout-bottom,.layout-center{width:100%;}
+
+/*表单*/
+.m-table-form {width: 100%; border-spacing: 0px; table-layout: fixed; word-break: break-all; padding: 0px; }
+table {display: table; border-collapse: separate; border-spacing: 2px; border-color: grey; }
+.m-table-form td.table-head {color: #6e6e6e;text-align: right; padding: 10px 5px;}
+.m-table-form td {vertical-align: middle; z-index: 1; overflow: visible; }
+.m-table-form td .u-input, .m-table-form td .multi-select-box, .m-table-form td .u-textarea {border-color: #dbdbdb; background-color: #fafafa; color: #7a7a7a; background-color: #ffffff; }
